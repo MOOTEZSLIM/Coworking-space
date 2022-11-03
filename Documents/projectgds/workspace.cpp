@@ -159,8 +159,8 @@ void workspace::on_modifier_clicked()
 
                                         "Click Cancel to exit."), QMessageBox::Cancel);
                 ui->lineEdit_id_2->clear();
-                ui->lineEdit_cap_2->clear();
-                ui->timeEdit_ho_2->clear();
+               // ui->lineEdit_cap_2->clear();
+                //ui->timeEdit_ho_2->clear();
                 ui->timeEdit_hf_2->clear();
                 ui->lineEdit_lm_2->clear();
 
