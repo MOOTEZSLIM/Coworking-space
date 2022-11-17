@@ -2,6 +2,7 @@
 #define SALLES_H
 #include <QString>
 #include <QSqlQueryModel>
+#include <QTableView>
 class Salles
 {
 public:
@@ -20,7 +21,12 @@ public:
     bool ajouter();
     bool supprimer(int);
     bool modifier(int);
+    bool PDF();
     QSqlQueryModel* afficher();
+    QSqlQueryModel* rechercher(QString R);
+    QSqlQueryModel* trierIDSALLE();
+    QSqlQueryModel* trierCAPSALLE();
+    QSqlQueryModel* trierHOSALLE();
 private:
     QString LISTE_MATERIEL,HOSALLE,HFSALLE;
     int CAPSALLE,IDSALLE;

@@ -1,4 +1,4 @@
-QT       += sql
+QT       += core gui sql network multimedia multimediawidgets charts printsupport widgets axcontainer svg
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,19 +17,32 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     connection.cpp \
+    exportexcel.cpp \
     main.cpp \
     mainwindow.cpp \
+    qrcode.cpp \
+    qrcodegeneratordemo.cpp \
+    qrcodegeneratorworker.cpp \
+    qrwidget.cpp \
     salles.cpp \
+    smtp.cpp \
+    stat_salle.cpp \
     workspace.cpp
 
 HEADERS += \
     connection.h \
+    exportexcel.h \
     mainwindow.h \
+    qrcode.h \
+    qrwidget.h \
     salles.h \
+    smtp.h \
+    stat_salle.h \
     workspace.h
 
 FORMS += \
     mainwindow.ui \
+    stat_salle.ui \
     workspace.ui
 
 # Default rules for deployment.
