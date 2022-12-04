@@ -5,6 +5,9 @@
 #include "stat_salle.h"
 #include <QMediaPlayer>
 #include <QVideoWidget>
+#include <QSerialPort>
+#include "arduino.h"
+#include <QByteArray>
 namespace Ui {
 class workspace;
 }
@@ -57,6 +60,18 @@ private slots:
 
     void on_pushButtonstop_clicked();
 
+    void on_ajouter_ard_clicked();
+
+    void on_ajouter_sa_clicked();
+
+
+
+
+    void update_label();
+    void on_pushButton_clicked();
+
+    void on_pushButtonmenu_clicked();
+
 private:
     Ui::workspace *ui;
        int selected=0;
@@ -65,6 +80,17 @@ private:
        QMediaPlayer* player;
        QVideoWidget* vw;
        QMediaPlaylist* m_playlist;
+Arduino A;
+    QByteArray data;
+       QSerialPort * serial;
+           QString portname;
+           quint16 vendorId;
+           quint16 productId;
+           bool arduino_available;
+           void arduino_init();
+
+
+
 
 };
 

@@ -1,5 +1,4 @@
-QT       += core gui sql network multimedia multimediawidgets charts printsupport widgets axcontainer svg
-
+QT       += core gui sql network multimedia multimediawidgets charts printsupport widgets axcontainer svg serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
@@ -16,32 +15,46 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    arduino.cpp \
+    camera.cpp \
     connection.cpp \
     exportexcel.cpp \
+    heat.cpp \
     main.cpp \
     mainwindow.cpp \
     qrcode.cpp \
     qrcodegeneratordemo.cpp \
     qrcodegeneratorworker.cpp \
     qrwidget.cpp \
+    rec.cpp \
+    reclamation.cpp \
+    reservation.cpp \
     salles.cpp \
     smtp.cpp \
     stat_salle.cpp \
     workspace.cpp
 
 HEADERS += \
+    arduino.h \
+    camera.h \
     connection.h \
     exportexcel.h \
+    heat.h \
     mainwindow.h \
     qrcode.h \
     qrwidget.h \
+    rec.h \
+    reclamation.h \
+    reservation.h \
     salles.h \
     smtp.h \
     stat_salle.h \
     workspace.h
 
 FORMS += \
+    camera.ui \
     mainwindow.ui \
+    rec.ui \
     stat_salle.ui \
     workspace.ui
 

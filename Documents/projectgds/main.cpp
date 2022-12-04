@@ -6,6 +6,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    QFile stylesheetfile("C:\\Users\\msi\\Documents\\projectgds\\Toolery.qss");
+        stylesheetfile.open(QFile::ReadOnly);
+        QString styleSheet=QLatin1String(stylesheetfile.readAll());
+        a.setStyleSheet(styleSheet);
     MainWindow w;
     w.show();
     Connection c;
