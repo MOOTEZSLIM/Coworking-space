@@ -18,6 +18,7 @@ SOURCES += \
     arduino.cpp \
     camera.cpp \
     connection.cpp \
+    dialog.cpp \
     exportexcel.cpp \
     heat.cpp \
     main.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
     reservation.cpp \
     salles.cpp \
     smtp.cpp \
+    sponsors.cpp \
     stat_salle.cpp \
     workspace.cpp
 
@@ -38,6 +40,7 @@ HEADERS += \
     arduino.h \
     camera.h \
     connection.h \
+    dialog.h \
     exportexcel.h \
     heat.h \
     mainwindow.h \
@@ -48,11 +51,13 @@ HEADERS += \
     reservation.h \
     salles.h \
     smtp.h \
+    sponsors.h \
     stat_salle.h \
     workspace.h
 
 FORMS += \
     camera.ui \
+    dialog.ui \
     mainwindow.ui \
     rec.ui \
     stat_salle.ui \
